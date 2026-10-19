@@ -237,11 +237,10 @@ p:last-child { margin-bottom: 0; }
 .hero--page h1 { font-size: clamp(2.75rem, 7vw, 5.25rem); max-width: none; }
 .hero--page .hero-lede { margin-bottom: 0; }
 /* Photo-strip hero: same-size photos drift slowly right-to-left in a seamless loop (the set is listed twice);
-   a dark fade on the left keeps the text readable. Pauses on hover; stays still for reduced-motion users. */
+   a dark fade on the left keeps the text readable. Keeps moving on hover; stays still for reduced-motion users. */
 .hero--strip .hero-media { overflow: hidden; }
 .hero--strip .strip-track { display: flex; height: 100%; width: max-content; animation: strip-drift 70s linear infinite; }
 .hero--strip .strip-track img { flex: none; width: auto; height: 100%; aspect-ratio: 735 / 859; object-fit: cover; }
-.hero--strip:hover .strip-track { animation-play-state: paused; }
 @keyframes strip-drift { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .hero--strip .strip-track { animation: none; } }
 .hero--strip::after {
