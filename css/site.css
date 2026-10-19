@@ -387,7 +387,8 @@ p:last-child { margin-bottom: 0; }
 
 /* ---- Award band ---- */
 .award { text-align: center; }
-.award svg { width: 44px; height: 44px; color: var(--red); margin: 0 auto 18px; }
+.award-stars { display: flex; justify-content: center; gap: 6px; margin-bottom: 18px; }
+.award svg { width: 34px; height: 34px; color: var(--red); }
 .award h2 { font-size: clamp(2rem, 4.5vw, 3.25rem); margin-bottom: 18px; }
 .award p { max-width: 640px; margin: 0 auto; font-size: 1.125rem; color: var(--ink-soft); }
 
